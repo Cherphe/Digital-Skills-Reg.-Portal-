@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLOR THEME */
+:root {
+  --gold: #c9a24d;
+  --red: #b11217;
+  --border: #ddd;
+  --text: #222;
+  --bg: #f9f9f9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+.header {
+  background: var(--white);
+  border-bottom: 4px solid var(--gold);
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.header h1 {
+  font-size: 26px;
+}
+
+.header p {
+  color: var(--red);
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/* SECTIONS */
+.section {
+  background: var(--white);
+  padding: 25px;
+  margin-bottom: 40px;
+  border: 1px solid var(--border);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  border-left: 5px solid var(--gold);
+  padding-left: 10px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+}
+
+.inline {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--gold);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--gold);
+  color: var(--white);
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+/* TABLE RESPONSIVENESS */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 700px; /* prevents squeezing on mobile */
+  border-collapse: collapse;
+}
+
+/* FOOTER */
+/* FOOTER */
+.footer {
+  background: #ffffff;
+  border-top: 2px solid var(--gold);
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer small {
+  display: block;
+  margin-top: 8px;
+  color: #666;
+}
